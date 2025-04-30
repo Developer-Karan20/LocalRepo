@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+}
+
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 80px;
+    box-shadow: 5px 5px 25px black;
+}
+
+.nav-content {
+    display: flex;
+    gap: 7vw;
+    align-items: center;
+    padding: 1vw 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 1vw 2vw;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.logo h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 2vw;
+    background-color: royalblue;
+}
+
+.content .left {
+    font-size: 3vw;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 1vw 1.5vw;
+    width: 55%;
+    line-height: 4vw;
+    background-color: royalblue;
+    color: white;
+    
+    
+}
+
+.left span {
+    color: orange;
+}
+
+.right img {
+    height: 38vw;
+    width: 52vw;
+}
+
+.log {
+    margin-left: 50vw;
+    margin-top: 3vw;
+    font-size: 2vw;
+    margin-bottom: 3vw;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.sign {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    border-radius: 5px;
+    padding: 10px; 
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.hide-nav {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-content {
+        display: none;
+
+    }
+
+    .content .left {
+        font-size: 8vw;
+        line-height: 10vw;
+        width: 80%;
+        margin-left: 7vw;
+    }
+
+    .content .right img {
+        width: 100%;
+        height: 100%;
+        /* margin-left: 7vw; */
+    }
+
+    .log {
+        font-size: 4vw;
+        margin-left: 45vw;
+    }
+
+    .logo {
+        font-size: 2vw;
+    }
+
+    .hide-nav {
+        display: flex;
+        align-items: center;
+        padding-right: 15px;
+        font-size: 4vw;
+    }
+}
